@@ -1,7 +1,27 @@
+*,
+*::before,
+*::after {
+	font: inherit;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
+	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background: #1d3557;
 	color: #fff;
 }
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .dial {
 	height: 400px;
 	width: 400px;
@@ -11,15 +31,6 @@ body {
 	position: relative;
 	display: inline-block;
 	margin-left: 40px;
-}
-
-* {
-	font: inherit;
-}
-
-body {
-	font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans',
-		'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .timer input {
